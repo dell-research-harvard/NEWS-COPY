@@ -11,8 +11,8 @@ from sentence_transformers.cross_encoder import CrossEncoder
 import logging
 from transformers import logging as lg
 
-import data_loaders
-import clu_evaluators
+from data_loaders import *
+from clu_evaluators import *
 
 
 lg.set_verbosity_error()
