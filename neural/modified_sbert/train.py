@@ -7,6 +7,7 @@ from torch.utils.data import DataLoader
 from sentence_transformers import models, losses, datasets, evaluation, LoggingHandler, SentenceTransformer, util
 from sentence_transformers.datasets import SentenceLabelDataset
 from sentence_transformers.cross_encoder import CrossEncoder
+from sentence_transformers.cross_encoder.evaluation import CEBinaryClassificationEvaluator
 
 import logging
 from transformers import logging as lg
@@ -242,7 +243,7 @@ def train_crossencoder(
 
     # Evaluate with multiple evaluators
     evaluators = [
-        evaluation.CEBinaryClassificationEvaluator.from_input_examples(dev, name='dev'),
+        CEBinaryClassificationEvaluator.from_input_examples(dev, name='dev'),
         clu_evaluators.CEClusterEvaluator.from_input_examples(dev, name='dev'),
     ]
 
