@@ -10,7 +10,11 @@ import logging
 
 from symspellpy import SymSpell, Verbosity
 
-sys.path.append(up(up(up(os.path.realpath(__file__)))))
+currentdir = os.path.dirname(os.path.realpath(__file__))
+parentdir = os.path.dirname(currentdir)
+grandparentdir = os.path.dirname(parentdir)
+sys.path.append(parentdir)
+sys.path.append(grandparentdir)
 
 import utils
 
