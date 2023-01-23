@@ -11,7 +11,7 @@ import numpy as np
 import pandas as pd
 from itertools import combinations
 
-from sentence_transformers import LoggingHandler, util, logging, SentenceTransformer
+from sentence_transformers import LoggingHandler, util, SentenceTransformer
 from sentence_transformers.cross_encoder import CrossEncoder
 from transformers import logging as lg
 
