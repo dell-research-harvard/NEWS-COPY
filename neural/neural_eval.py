@@ -10,6 +10,7 @@ import sys
 import numpy as np
 import pandas as pd
 from itertools import combinations
+import logging
 
 from sentence_transformers import LoggingHandler, util, SentenceTransformer
 from sentence_transformers.cross_encoder import CrossEncoder
