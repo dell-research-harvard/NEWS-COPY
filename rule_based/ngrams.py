@@ -11,7 +11,7 @@ from os.path import dirname as up
 
 sys.path.append(up(up(up(os.path.realpath(__file__)))))
 
-import rule_based_utils
+from rule_based import rule_based_utils
 
 
 def ngram_overlap(data_dict, overlap):
