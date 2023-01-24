@@ -6,7 +6,7 @@ Code for our paper "Noise-Robust De-Duplication at Scale"
 This repo includes: 
 - NEWS-COPY dataset: 7,210 document dataset, with 122,876 positive duplicate pairs, for studying noise-robust de-duplication. 
 - Rule-based de-duplication methods: hashing and N-gram overlap. 
-- Neural de-duplication methods: a contrastively trained bi-encoder, and a "re-rank" style approach combining a bi- and cross-encoder. 
+- Neural de-duplication methods: a contrastively trained bi-encoder, and a "re-rank" style approach combining a bi- and cross-encoder. Plus pre-trained models for both of these. 
 - Inference at scale for hashing and the biencoder methods.  
 
 If you find this work useful, please cite the following paper: 
@@ -37,6 +37,7 @@ Codebase for neural methods for de-duplication, n-gram overlap and locally sensi
 ### Neural
 Training and evaluation scripts for a contrastively trained bi-encoder, and a "re-rank" style approach combining a bi- and cross-encoder. These outperform the rule-based approaches above. 
 
+Pretrained models for both the bi-encoder and cross-encoder can be found [here](https://www.dropbox.com/sh/so3iw4xecayyrow/AAAiy5FhDf0WpUeHFzxO1SIza?dl=0).
 
 ### Inference at scale
 Inference at scale for hashing (LSH) and the biencoder methods over C4 and SuperGlue. The bi-encoder scales well, de-duplicating a 10 million text corpus on a single GPU card in a matter of hours. 
