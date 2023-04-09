@@ -4,7 +4,7 @@ Code for our paper "Noise-Robust De-Duplication at Scale"
 [[NBER](https://www.nber.org/papers/w30726)], [[arxiv](https://arxiv.org/abs/2210.04261)], [[ICLR](https://openreview.net/forum?id=bAz2DBS35i)]
 
 This repo includes: 
-- NEWS-COPY dataset: 7,210 document dataset, with 122,876 positive duplicate pairs, for studying noise-robust de-duplication. 
+- NEWS-COPY dataset: 27,210 document dataset, with 122,876 positive duplicate pairs, for studying noise-robust de-duplication. 
 - Rule-based de-duplication methods: hashing and N-gram overlap. 
 - Neural de-duplication methods: a contrastively trained bi-encoder, and a "re-rank" style approach combining a bi- and cross-encoder. Plus pre-trained models for both of these. 
 - Inference at scale for hashing and the biencoder methods.  
